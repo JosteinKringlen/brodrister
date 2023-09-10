@@ -96,7 +96,9 @@ export default function Toaster(props: ToasterProps) {
                             <div
                                 className={clsx(
                                     'brodrister__toast',
-                                    toastProps?.className,
+                                    toastProps?.classNames?.[
+                                        options?.type ?? 'info'
+                                    ],
                                     options?.className,
                                 )}
                                 data-type={options?.type}

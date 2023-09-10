@@ -54,9 +54,14 @@ export type ToasterProps = {
             error?: Prettify<CSSProperties & ToastCSSVariables>;
         };
         /**
-         * Sets the default `className` for the toasts.
+         * Sets the default `className` for the given type.
          */
-        className?: string;
+        classNames?: {
+            info?: string;
+            success?: string;
+            warning?: string;
+            error?: string;
+        };
     };
 };
 
