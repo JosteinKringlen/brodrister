@@ -1,0 +1,10 @@
+node_modules
+
+# package
+dist
+
+# web app
+web/build
+web/node_modules
+web/.cache
+web/public/build
