@@ -99,7 +99,12 @@ Type: `object`
         /**
          * Additional classes to pass to the toast.
          */
-        className?: string;
+        classNames?: {
+            success?: string;
+            info?: string;
+            warning?: string;
+            error?: string;
+        };
     };
 }
 
