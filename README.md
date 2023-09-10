@@ -1,3 +1,8 @@
+
+<div align="center">
+    <img src="https://github.com/JosteinKringlen/brodrister/assets/8539877/123f4f19-1a78-4e06-9b95-f36c28195862" width="50%"/>
+</div>
+
 # Brødrister
 
 > _Norwegian for "toaster"._
