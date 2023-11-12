@@ -32,10 +32,10 @@ devDependencies:
     specifier: ^20.5.9
     version: 20.6.0
   '@types/react':
-    specifier: ^18.2.21
+    specifier: 18.2.21
     version: 18.2.21
   '@types/react-dom':
-    specifier: ^18.2.7
+    specifier: 18.2.7
     version: 18.2.7
   '@types/uuid':
     specifier: ^9.0.3
