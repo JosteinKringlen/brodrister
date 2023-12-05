@@ -70,7 +70,7 @@ export type ToastOptions = {
      * Sets the id of the toast.
      * Defaults to a random UUID v4 string.
      */
-    id?: string;
+    id: string;
     /**
      * Sets the type of the toast.
      * Defaults to `'info'`
@@ -97,11 +97,11 @@ export type ToastOptions = {
 
 export type ToastProps = {
     message: string;
-    options: Partial<ToastOptions>;
+    options: ToastOptions;
 };
 
 export type ToastStore = {
-    toasts: Map<string, ToastProps>;
-    toast: (message: string, options?: ToastOptions) => void;
+    toasts: ToastProps[];
+    toast: (message: string, options?: Partial<ToastOptions>) => void;
     removeToast: (id: string) => void;
 };
