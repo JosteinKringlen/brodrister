@@ -70,22 +70,22 @@ export default function Toaster(props: ToasterProps) {
             {...providerProps}
         >
             <AnimatePresence>
-                {[...toasts.entries()].map(([key, { message, options }]) => (
+                {toasts.map(({ message, options }) => (
                     <RadixToast.Root
                         asChild
                         forceMount
                         open
                         onOpenChange={() => {
-                            removeToast(key);
+                            removeToast(options.id);
                         }}
                         duration={options?.duration || duration}
-                        key={key}
-                        id={key}
+                        key={options.id}
+                        id={options.id}
                         className="brodrister__toast-root"
                         data-v-pos={vpos}
                     >
                         <motion.li
-                            layoutId={key}
+                            layoutId={options.id}
                             layout
                             variants={variants[vpos]}
                             initial="initial"
