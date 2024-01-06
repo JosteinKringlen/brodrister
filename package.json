@@ -52,7 +52,7 @@
     "@changesets/cli": "2.27.1",
     "@remix-run/eslint-config": "2.4.1",
     "@types/node": "20.10.5",
-    "@types/react": "18.2.45",
+    "@types/react": "18.2.47",
     "@types/react-dom": "18.2.18",
     "@types/uuid": "9.0.7",
     "autoprefixer": "10.4.16",
